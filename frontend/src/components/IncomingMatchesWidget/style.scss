@@ -1,0 +1,28 @@
+.trash-icon {
+    cursor: pointer;
+
+    &:hover {
+        color: #999;
+    }
+}
+
+.custom-confirm {
+    background-color: white;
+    padding: 2rem;
+    width: 450px;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 10px;
+}
+
+.incoming-player-1 {
+    position: fixed;
+    left: 0;
+    width: 400px;
+}
+
+.incoming-player-2 {
+    position: fixed;
+    right: 0;
+    width: 400px;
+    z-index: -10;
+}

@@ -1,0 +1,51 @@
+.custom-file-input {
+    &::-webkit-file-upload-button {
+        visibility: hidden;
+    }
+
+    &::before {
+        content: "Upload avatar";
+        display: inline-block;
+        background: linear-gradient(top, #f9f9f9, #e3e3e3);
+        border: 1px solid #999;
+        border-radius: 0 3px 3px 0;
+        padding: 10px;
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        font-weight: 650;
+        font-size: 16px;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+.signup__icon-wrapper {
+    border: 1px solid #999;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup__input-border {
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #999;
+}
+
+
+
+.signup_tooltip--error{
+   position: absolute;
+    border-radius: 100px 100px 100px 1px;
+   color: #f9f9f9;
+   left: 100%;
+   z-index: 1;
+   width: fit-content;
+   background: rgba(255, 0, 0, 0.681);
+   top: 25%;
+   transform: translateY(-50%);
+}
+

@@ -1,0 +1,70 @@
+.profile-wrapper {
+  width: 1100px;
+  display: flex;
+  height: calc(100vh - 200px);
+  align-items: center;
+}
+
+.profile-avatar-wrapper {
+  margin-right: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-avatar__img {
+  display: block;
+  width: 85%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgb(208, 208, 208);
+}
+
+.profile-avatar__upload-lable {
+  margin: auto;
+  width: 60%;
+}
+
+.profile-avatar__upload-input {
+  display: none;
+}
+
+.profile-avatar__upload-button {
+  padding: 4px 32px;
+  border-radius: 4px;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #2f80ec;
+  color: #eefbff;
+  text-align: center;
+}
+
+.profile-info-wrapper {
+  margin-left: 20px;
+}
+
+.info-avatar {
+  // border: 1px solid rgb(208, 208, 208);
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.cancel {
+  background-color: rgb(134, 134, 134);
+  color: white;
+}
+
+.changePassword-popup {
+  background-color: rgb(190, 187, 187);
+}
+
+.profile__filed--error {
+  color: red;
+  height: 10px;
+  font-size: small;
+  text-align: left;
+}

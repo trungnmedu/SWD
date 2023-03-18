@@ -1,0 +1,41 @@
+.review {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+
+  .star-svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .reviewer-img {
+    width: 100px;
+
+    > img {
+      display: block;
+      width: 80px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+  }
+
+  .review-content {
+    > p > span {
+      display: flex !important;
+      align-items: center;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+
+    .review-time {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.review:not(:last-child) {
+  border-bottom: 1px solid rgb(207, 207, 207);
+}

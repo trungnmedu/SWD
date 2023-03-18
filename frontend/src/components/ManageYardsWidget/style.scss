@@ -1,0 +1,51 @@
+.upload__img-wrapper {
+    border: 2px dashed rgb(208, 208, 208);
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-bg-input {
+    &::-webkit-file-upload-button {
+        visibility: hidden;
+    }
+
+    &::before {
+        content: "Upload";
+        display: inline-block;
+        background: linear-gradient(top, #f9f9f9, #e3e3e3);
+        border: 1px solid #999;
+        border-radius: 3px;
+        padding: 10px;
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        font-weight: 650;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.price-input {
+    border-radius: 3px;
+    outline: none;
+}
+
+.slot-create-container {
+    padding: 2px;
+
+    & > .slot-details {
+        background-color: rgb(218, 218, 218);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        & i {
+            font-size: 0.8rem;
+        }
+    }
+}

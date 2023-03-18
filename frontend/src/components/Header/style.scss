@@ -1,0 +1,79 @@
+.home-title {
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-icon {
+  right: 1.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(154, 154, 154);
+  }
+}
+
+.nav-brand {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.profile-popup {
+  border: 1px solid rgb(208, 208, 208);
+  height: min-content;
+  position: absolute;
+  min-width: 150px;
+  width: fit-content;
+  right: 3rem;
+  border-radius: 5px;
+  top: 3rem;
+  background-color: white;
+  z-index: 10;
+}
+
+.profile__popup-feature {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+
+  &:first-child {
+    border-radius: 5px 5px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 5px 5px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgb(208, 208, 208);
+  }
+
+  & > i {
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+    background: black;
+    color: white;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  width: 100vw;
+}
+
+.unauth-group {
+  right: 1.5rem;
+  top: 0;
+  font-size: 1rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}

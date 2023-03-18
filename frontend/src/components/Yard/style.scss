@@ -1,0 +1,151 @@
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 550px;
+}
+
+.yard-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.react-slideshow-container .default-nav {
+    border-radius: 0;
+    background: none;
+}
+
+.yard__details-field {
+    background-color: rgb(218, 218, 218);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.slot-details-container {
+    padding: 2px;
+
+    & > .slot-details {
+        background-color: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        cursor: pointer;
+        border: 1px solid #999;
+
+        &:hover {
+            background-color: rgb(207, 207, 207);
+        }
+
+        & i {
+            font-size: 0.8rem;
+        }
+    }
+
+    & > .slot-details-clicked {
+        background-color: rgb(62, 152, 52);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        cursor: pointer;
+        color: white;
+
+        &:hover {
+            background-color: rgb(77, 186, 65);
+        }
+
+        & i {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.match-container {
+    height: 8rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+
+    & .match__clear-btn {
+        position: relative;
+        left: 5rem;
+        text-align: end;
+    }
+
+    & p:not(:first-child) {
+        font-size: 0.8rem;
+    }
+
+    & p:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.matches-container {
+    height: 28rem;
+    overflow-y: visible;
+    overflow-x: hidden;
+    border-bottom: 2px solid black;
+}
+
+.loading-height {
+    height: calc(100vh - 64px);
+}
+
+.booked-slot {
+    background-color: rgb(68, 68, 68) !important;
+    cursor: not-allowed !important;
+    color: white;
+}
+
+.booked-bg {
+    background-color: rgb(68, 68, 68) !important;
+    color: white;
+}
+
+.div-disabled {
+    .flex-column {
+        cursor: not-allowed;
+    }
+}
+
+#voucher-btn {
+    &:disabled {
+        cursor: not-allowed;
+        background: none;
+    }
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
+.report-ic-box {
+    font-size: 1.5rem;
+    border-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.report-icon {
+    cursor: pointer;
+    color: red;
+    &:hover {
+        color: #999;
+    }
+}
+
+.map-color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color {
+    display: inline-block;
+    width: 2rem;
+    border: 1px solid black;
+    height: 1rem;
+    margin-right: 0.8rem;
+}
